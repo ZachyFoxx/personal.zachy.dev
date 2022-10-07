@@ -6,7 +6,8 @@ html {
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 100px black;
-  padding-bottom: 1.6rem;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -69,12 +70,19 @@ a:active {
 }
 
 img {
-  max-width: 100%;
-  border-radius: 20px;
+  border-radius: 40px;
+  width: 450px;
+  height:400px;
+  transition: transform border-radius 0.2s;
+} 
+
+img:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 30px;
   border: 1px solid green;
   height: 10%;
   width: 50%;
@@ -155,6 +163,11 @@ button:hover {
   background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: transform .2s;
+}
+
+.box:hover {
+  transform: scale(1.01);
 }
 
 .header {
